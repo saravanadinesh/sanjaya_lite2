@@ -1,13 +1,13 @@
 EESchema Schematic File Version 4
-LIBS:sanjaya_lite-cache
+LIBS:sanjaya_lite2-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 3
-Title "Sanjaya Lite"
-Date "2019-02-04"
-Rev "0.95"
+Title "Sanjaya Lite 2.0"
+Date "2019-04-13"
+Rev "0.1"
 Comp "Bodhileaf Technologies Pvt. Ltd."
 Comment1 ""
 Comment2 ""

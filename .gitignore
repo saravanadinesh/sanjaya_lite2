@@ -11,7 +11,7 @@ _autosave-*
 *-rescue.lib
 *-save.pro
 *-save.kicad_pcb
-
+*-cache.lib
 # Autorouter files (exported from Pcbnew)
 *.dsn
 *.ses
