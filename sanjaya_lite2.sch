@@ -6,8 +6,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 4
 Title "Sanjaya Lite 2.0"
-Date "2019-04-14"
-Rev "0.2"
+Date "2019-04-15"
+Rev "0.3"
 Comp "Bodhileaf Technologies Pvt. Ltd."
 Comment1 ""
 Comment2 ""
@@ -421,7 +421,7 @@ Wire Wire Line
 Wire Wire Line
 	6900 900  6900 1350
 Wire Wire Line
-	8650 900  8950 900 
+	8650 900  8800 900 
 Wire Wire Line
 	8650 1750 8650 2500
 Wire Wire Line
@@ -430,7 +430,6 @@ Wire Wire Line
 	8950 2600 9750 2600
 Wire Wire Line
 	8950 1800 8950 900 
-Connection ~ 8950 900 
 Wire Wire Line
 	7200 1700 7200 900 
 Wire Wire Line
@@ -563,24 +562,16 @@ F 3 "~" H 1350 7000 50  0001 C CNN
 	1    1350 7000
 	0    -1   -1   0   
 $EndComp
-Text Label 1950 6600 1    50   ~ 0
+Text Label 1950 6500 1    50   ~ 0
 5V_Out
-Wire Wire Line
-	1950 6600 1950 6800
-Text Label 2050 6600 1    50   ~ 0
+Text Label 2050 6500 1    50   ~ 0
 GND_Supply
-Text Label 1450 6600 1    50   ~ 0
+Text Label 1450 6500 1    50   ~ 0
 GND_Supply
-Wire Wire Line
-	1350 6600 1350 6800
-Text Label 1350 6600 1    50   ~ 0
+Text Label 1350 6500 1    50   ~ 0
 12V_Out
-Wire Wire Line
-	1450 6600 1450 6800
-Text Label 3850 6600 1    50   ~ 0
+Text Label 3850 5850 1    50   ~ 0
 SCLK
-Wire Wire Line
-	3850 6600 3850 6800
 Text Label 3950 6600 1    50   ~ 0
 MISO_RLY1
 Wire Wire Line
@@ -633,7 +624,7 @@ F 3 "~" H 1950 7000 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	2050 6600 2050 6800
+	2050 6500 2050 6800
 $Comp
 L Connector:Conn_01x02_Male J4
 U 1 1 5C58BD12
@@ -774,8 +765,6 @@ Wire Wire Line
 	6400 1100 6400 1250
 Wire Wire Line
 	6500 1100 6500 1400
-Wire Wire Line
-	8950 900  9550 900 
 Text Label 9550 2400 2    50   ~ 0
 Sim800_RST
 Wire Wire Line
@@ -824,7 +813,7 @@ Wire Wire Line
 Wire Wire Line
 	10900 2200 10900 600 
 Wire Wire Line
-	10900 600  7850 600 
+	10900 600  8800 600 
 Wire Wire Line
 	7850 600  7850 2000
 Wire Wire Line
@@ -1040,8 +1029,8 @@ Connection ~ 9550 1100
 Wire Wire Line
 	9550 1100 9550 1150
 Wire Wire Line
-	2550 6600 2550 6800
-Text Label 2650 6600 1    50   ~ 0
+	2550 6500 2550 6550
+Text Label 2650 6500 1    50   ~ 0
 GND_Supply
 $Comp
 L Connector:Conn_01x02_Male J?
@@ -1055,7 +1044,64 @@ F 3 "~" H 2550 7000 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	2650 6600 2650 6800
-Text Label 2550 6600 1    50   ~ 0
+	2650 6500 2650 6800
+Text Label 2550 6500 1    50   ~ 0
 VBAT
+Text Label 5000 6600 1    50   ~ 0
+GND_Supply
+$Comp
+L Device:R_Small R?
+U 1 1 5CB4A9C2
+P 3850 6050
+F 0 "R?" H 3909 6096 50  0000 L CNN
+F 1 "330orZero" H 3909 6005 50  0000 L CNN
+F 2 "" H 3850 6050 50  0001 C CNN
+F 3 "~" H 3850 6050 50  0001 C CNN
+	1    3850 6050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 6150 3850 6800
+Wire Wire Line
+	3850 5950 3850 5850
+$Comp
+L Device:Polyfuse_Small F?
+U 1 1 5CB5B842
+P 1350 6650
+F 0 "F?" H 1200 6700 50  0000 L CNN
+F 1 "500mA" H 1050 6600 50  0000 L CNN
+F 2 "" H 1400 6450 50  0001 L CNN
+F 3 "~" H 1350 6650 50  0001 C CNN
+	1    1350 6650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 6800 1350 6750
+Wire Wire Line
+	1350 6550 1350 6500
+Wire Wire Line
+	1450 6500 1450 6800
+$Comp
+L Device:Polyfuse_Small F?
+U 1 1 5CBE18B1
+P 2550 6650
+F 0 "F?" H 2400 6700 50  0000 L CNN
+F 1 "500mA" H 2250 6600 50  0000 L CNN
+F 2 "" H 2600 6450 50  0001 L CNN
+F 3 "~" H 2550 6650 50  0001 C CNN
+	1    2550 6650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 6750 2550 6800
+Wire Wire Line
+	1950 6500 1950 6800
+Wire Wire Line
+	8800 600  8800 900 
+Connection ~ 8800 600 
+Wire Wire Line
+	8800 600  7850 600 
+Connection ~ 8800 900 
+Wire Wire Line
+	8800 900  8950 900 
 $EndSCHEMATC

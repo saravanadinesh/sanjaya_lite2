@@ -6,8 +6,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 4
 Title "Sanjaya Lite 2.0"
-Date "2019-04-13"
-Rev "0.1"
+Date "2019-04-15"
+Rev "0.3"
 Comp "Bodhileaf Technologies Pvt. Ltd."
 Comment1 ""
 Comment2 ""
@@ -36,8 +36,6 @@ F 3 "~" H 1650 3000 50  0001 C CNN
 	1    1650 3000
 	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	7800 3000 7950 3000
 Wire Wire Line
 	7800 3100 8150 3100
 $Comp
@@ -94,11 +92,6 @@ Wire Wire Line
 Wire Wire Line
 	7000 3000 7100 3000
 Wire Wire Line
-	7950 2550 7950 3000
-Connection ~ 7950 3000
-Wire Wire Line
-	7950 3000 8400 3000
-Wire Wire Line
 	8150 3100 8150 3700
 $Comp
 L Custom_Misc:MP2315_DCDC_Board B2
@@ -127,8 +120,6 @@ Connection ~ 7000 2550
 Text HLabel 9050 2550 2    50   Output ~ 0
 VBAT
 Wire Wire Line
-	9050 2550 7950 2550
-Wire Wire Line
 	4950 3400 4950 4150
 $Comp
 L Connector:Conn_01x02_Male J11
@@ -144,9 +135,6 @@ $EndComp
 Connection ~ 4350 2550
 Wire Wire Line
 	4350 2550 4350 1900
-Connection ~ 7950 2550
-Wire Wire Line
-	7500 2550 7950 2550
 Wire Wire Line
 	7000 2550 7400 2550
 $Comp
@@ -268,7 +256,7 @@ L Regulator_Linear:MCP1700-3302E_SOT23 U?
 U 1 1 5CB50A11
 P 8850 3000
 F 0 "U?" H 8850 3242 50  0000 C CNN
-F 1 "MCP1700-3302E_SOT23" H 8850 3151 50  0000 C CNN
+F 1 "MCP1700-3302E_SOT23" H 8900 3150 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 8850 3225 50  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001826C.pdf" H 8850 3000 50  0001 C CNN
 	1    8850 3000
@@ -323,4 +311,26 @@ Wire Wire Line
 Connection ~ 8400 3000
 Wire Wire Line
 	8400 3000 8550 3000
+Wire Wire Line
+	7500 2550 8400 2550
+Wire Wire Line
+	7800 3000 8050 3000
+Wire Wire Line
+	8400 3000 8400 2550
+Connection ~ 8400 2550
+Wire Wire Line
+	8400 2550 9050 2550
+$Comp
+L Connector:Conn_01x02_Male J?
+U 1 1 5CC0BDBC
+P 8150 2800
+F 0 "J?" V 8210 2841 50  0000 L CNN
+F 1 "Pwr_SW" V 8100 2500 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8150 2800 50  0001 C CNN
+F 3 "~" H 8150 2800 50  0001 C CNN
+	1    8150 2800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8150 3000 8400 3000
 $EndSCHEMATC

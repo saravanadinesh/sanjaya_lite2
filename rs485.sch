@@ -5,10 +5,10 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 4 4
-Title ""
-Date ""
-Rev ""
-Comp ""
+Title "Sanjaya Lite 2.0"
+Date "2019-04-15"
+Rev "0.3"
+Comp "Bodhileaf Technologies Pvt. Ltd."
 Comment1 ""
 Comment2 ""
 Comment3 ""
