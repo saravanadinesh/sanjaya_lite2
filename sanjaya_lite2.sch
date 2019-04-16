@@ -491,7 +491,7 @@ U 1 1 5C360C3F
 P 2750 750
 F 0 "J2" V 2810 790 50  0000 L CNN
 F 1 "J_Current" V 2901 790 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2750 750 50  0001 C CNN
+F 2 "Connector_JST:JST_XH_B02B-XH-A_1x02_P2.50mm_Vertical" H 2750 750 50  0001 C CNN
 F 3 "~" H 2750 750 50  0001 C CNN
 	1    2750 750 
 	0    1    1    0   
@@ -530,7 +530,7 @@ U 1 1 5C3CDD85
 P 5000 7000
 F 0 "J6" V 5153 7140 50  0000 L CNN
 F 1 "Conn_I2C" V 5050 7200 50  0000 L CNN
-F 2 "Connector_JST:JST_EH_B04B-EH-A_1x04_P2.50mm_Vertical" H 5000 7000 50  0001 C CNN
+F 2 "Connector_JST:JST_XH_B04B-XH-A_1x04_P2.50mm_Vertical" H 5000 7000 50  0001 C CNN
 F 3 "~" H 5000 7000 50  0001 C CNN
 	1    5000 7000
 	0    -1   -1   0   
@@ -557,7 +557,7 @@ U 1 1 5C3F58EA
 P 1350 7000
 F 0 "J1" V 1503 7040 50  0000 L CNN
 F 1 "Conn_12V" V 1412 7040 50  0000 L CNN
-F 2 "Connector_JST:JST_EH_B02B-EH-A_1x02_P2.50mm_Vertical" H 1350 7000 50  0001 C CNN
+F 2 "Connector_JST:JST_XH_B02B-XH-A_1x02_P2.50mm_Vertical" H 1350 7000 50  0001 C CNN
 F 3 "~" H 1350 7000 50  0001 C CNN
 	1    1350 7000
 	0    -1   -1   0   
@@ -618,7 +618,7 @@ U 1 1 5C56525C
 P 1950 7000
 F 0 "J3" V 2100 7150 50  0000 R CNN
 F 1 "Conn_5V" V 2000 7350 50  0000 R CNN
-F 2 "Connector_JST:JST_EH_B02B-EH-A_1x02_P2.50mm_Vertical" H 1950 7000 50  0001 C CNN
+F 2 "Connector_JST:JST_XH_B02B-XH-A_1x02_P2.50mm_Vertical" H 1950 7000 50  0001 C CNN
 F 3 "~" H 1950 7000 50  0001 C CNN
 	1    1950 7000
 	0    -1   -1   0   
@@ -631,7 +631,7 @@ U 1 1 5C58BD12
 P 4200 650
 F 0 "J4" V 4260 690 50  0000 L CNN
 F 1 "J_LED" V 4351 690 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4200 650 50  0001 C CNN
+F 2 "Connector_JST:JST_XH_B02B-XH-A_1x02_P2.50mm_Vertical" H 4200 650 50  0001 C CNN
 F 3 "~" H 4200 650 50  0001 C CNN
 	1    4200 650 
 	0    1    1    0   
@@ -662,12 +662,12 @@ Wire Wire Line
 Wire Wire Line
 	4200 1150 4450 1150
 $Comp
-L Device:CP1_Small C?
+L Device:CP1_Small C5
 U 1 1 5CB6B6F9
 P 1300 2450
-F 0 "C?" H 1391 2496 50  0000 L CNN
+F 0 "C5" H 1391 2496 50  0000 L CNN
 F 1 "100uF" H 1391 2405 50  0000 L CNN
-F 2 "Capacitor_Tantalum_SMD:CP_EIA-3216-10_Kemet-I_Pad1.58x1.35mm_HandSolder" H 1300 2450 50  0001 C CNN
+F 2 "Capacitor_SMD:CP_Elec_6.3x5.4" H 1300 2450 50  0001 C CNN
 F 3 "~" H 1300 2450 50  0001 C CNN
 	1    1300 2450
 	1    0    0    -1  
@@ -700,12 +700,12 @@ Wire Wire Line
 Wire Wire Line
 	9550 2300 9750 2300
 $Comp
-L Device:CP1 C?
+L Device:CP1 C6
 U 1 1 5CB49DBD
 P 9900 1300
-F 0 "C?" H 10015 1346 50  0000 L CNN
+F 0 "C6" H 10015 1346 50  0000 L CNN
 F 1 "1000uF" H 10015 1255 50  0000 L CNN
-F 2 "" H 9900 1300 50  0001 C CNN
+F 2 "Capacitor_SMD:CP_Elec_10x10" H 9900 1300 50  0001 C CNN
 F 3 "~" H 9900 1300 50  0001 C CNN
 	1    9900 1300
 	1    0    0    -1  
@@ -724,12 +724,12 @@ Wire Wire Line
 Text Label 6500 4050 0    50   ~ 0
 Sim800_RST
 $Comp
-L Device:R_Small_US R?
+L Device:R_Small_US R12
 U 1 1 5CB6767F
 P 6250 4050
-F 0 "R?" V 6350 4000 50  0000 C CNN
+F 0 "R12" V 6350 4000 50  0000 C CNN
 F 1 "0" V 6350 4100 50  0000 C CNN
-F 2 "" H 6250 4050 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6250 4050 50  0001 C CNN
 F 3 "~" H 6250 4050 50  0001 C CNN
 	1    6250 4050
 	0    1    1    0   
@@ -749,12 +749,12 @@ Connection ~ 7050 900
 Wire Wire Line
 	7050 900  6900 900 
 $Comp
-L Connector:Conn_01x04_Male J?
+L Connector:Conn_01x04_Male J9
 U 1 1 5CBE8673
 P 6500 900
-F 0 "J?" V 6500 1100 50  0000 L CNN
+F 0 "J9" V 6500 1100 50  0000 L CNN
 F 1 "J_UART_DBG" V 6600 1100 50  0000 L CNN
-F 2 "" H 6500 900 50  0001 C CNN
+F 2 "Connector_JST:JST_XH_B04B-XH-A_1x04_P2.50mm_Vertical" H 6500 900 50  0001 C CNN
 F 3 "~" H 6500 900 50  0001 C CNN
 	1    6500 900 
 	0    -1   1    0   
@@ -776,10 +776,10 @@ Wire Wire Line
 	8650 2600 8950 2600
 Connection ~ 8950 2600
 $Comp
-L Transistor_FET:BSS138 Q?
+L Transistor_FET:BSS138 Q2
 U 1 1 5CB3ECDF
 P 7850 2400
-F 0 "Q?" V 8100 2400 50  0000 C CNN
+F 0 "Q2" V 8100 2400 50  0000 C CNN
 F 1 "BSS138" V 8191 2400 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 8050 2325 50  0001 L CIN
 F 3 "https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf" H 7850 2400 50  0001 L CNN
@@ -787,10 +787,10 @@ F 3 "https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf" H 7850 2400 50  000
 	0    -1   1    0   
 $EndComp
 $Comp
-L Transistor_FET:BSS138 Q?
+L Transistor_FET:BSS138 Q3
 U 1 1 5CB462C2
 P 8200 2800
-F 0 "Q?" V 8450 2800 50  0000 C CNN
+F 0 "Q3" V 8450 2800 50  0000 C CNN
 F 1 "BSS138" V 8541 2800 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 8400 2725 50  0001 L CIN
 F 3 "https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf" H 8200 2800 50  0001 L CNN
@@ -842,12 +842,12 @@ Wire Wire Line
 Wire Wire Line
 	7250 2750 6000 2750
 $Comp
-L Connector:Conn_01x04_Male J?
+L Connector:Conn_01x04_Male J8
 U 1 1 5CB7AD38
 P 5850 7000
-F 0 "J?" V 6003 7140 50  0000 L CNN
+F 0 "J8" V 6003 7140 50  0000 L CNN
 F 1 "Conn_I2C" V 5912 7140 50  0000 L CNN
-F 2 "Connector_JST:JST_EH_B04B-EH-A_1x04_P2.50mm_Vertical" H 5850 7000 50  0001 C CNN
+F 2 "Connector_JST:JST_XH_B04B-XH-A_1x04_P2.50mm_Vertical" H 5850 7000 50  0001 C CNN
 F 3 "~" H 5850 7000 50  0001 C CNN
 	1    5850 7000
 	0    -1   -1   0   
@@ -869,12 +869,12 @@ Wire Wire Line
 Wire Wire Line
 	6050 6600 6050 6800
 $Comp
-L Connector:Conn_01x06_Male J?
+L Connector:Conn_01x06_Male J7
 U 1 1 5CB833E6
 P 3850 7000
-F 0 "J?" V 4000 7350 50  0000 R CNN
+F 0 "J7" V 4000 7350 50  0000 R CNN
 F 1 "Conn_SPI" V 3900 7600 50  0000 R CNN
-F 2 "" H 3850 7000 50  0001 C CNN
+F 2 "Connector_JST:JST_XH_B06B-XH-A_1x06_P2.50mm_Vertical" H 3850 7000 50  0001 C CNN
 F 3 "~" H 3850 7000 50  0001 C CNN
 	1    3850 7000
 	0    -1   -1   0   
@@ -921,24 +921,18 @@ GND_Supply
 Text Label 9150 3450 0    50   ~ 0
 V_Supply
 Wire Wire Line
-	9150 3450 9000 3450
-Wire Wire Line
-	9000 3450 9000 3700
-Wire Wire Line
-	9000 3700 8850 3700
-Wire Wire Line
 	9150 4350 9000 4350
 Wire Wire Line
 	9000 4350 9000 4100
 Wire Wire Line
 	9000 4100 8850 4100
 $Comp
-L Connector:Conn_01x03_Male J?
+L Connector:Conn_01x03_Male J12
 U 1 1 5CC015A7
 P 9500 3950
-F 0 "J?" H 9473 3880 50  0000 R CNN
+F 0 "J12" H 9473 3880 50  0000 R CNN
 F 1 "Conn_RS485" H 9473 3971 50  0000 R CNN
-F 2 "" H 9500 3950 50  0001 C CNN
+F 2 "Connector_JST:JST_XH_B03B-XH-A_1x03_P2.50mm_Vertical" H 9500 3950 50  0001 C CNN
 F 3 "~" H 9500 3950 50  0001 C CNN
 	1    9500 3950
 	-1   0    0    1   
@@ -977,12 +971,12 @@ Wire Wire Line
 Wire Wire Line
 	7650 5900 8250 5900
 $Comp
-L Device:R R?
+L Device:R R7
 U 1 1 5CD4B28C
 P 2700 1200
-F 0 "R?" V 2800 1200 50  0000 C CNN
+F 0 "R7" V 2800 1200 50  0000 C CNN
 F 1 "1m" V 2600 1200 50  0000 C CNN
-F 2 "" V 2630 1200 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 2630 1200 50  0001 C CNN
 F 3 "~" H 2700 1200 50  0001 C CNN
 	1    2700 1200
 	0    1    1    0   
@@ -1002,12 +996,12 @@ Wire Wire Line
 Wire Wire Line
 	2550 1550 2550 1200
 $Comp
-L Device:R R?
+L Device:R R13
 U 1 1 5CD68F78
 P 9550 1300
-F 0 "R?" V 9650 1300 50  0000 C CNN
+F 0 "R13" V 9650 1300 50  0000 C CNN
 F 1 "1m" V 9450 1300 50  0000 C CNN
-F 2 "" V 9480 1300 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 9480 1300 50  0001 C CNN
 F 3 "~" H 9550 1300 50  0001 C CNN
 	1    9550 1300
 	-1   0    0    1   
@@ -1033,12 +1027,12 @@ Wire Wire Line
 Text Label 2650 6500 1    50   ~ 0
 GND_Supply
 $Comp
-L Connector:Conn_01x02_Male J?
+L Connector:Conn_01x02_Male J5
 U 1 1 5CD88A98
 P 2550 7000
-F 0 "J?" V 2700 7150 50  0000 R CNN
+F 0 "J5" V 2700 7150 50  0000 R CNN
 F 1 "Conn_Bat" V 2600 7400 50  0000 R CNN
-F 2 "Connector_JST:JST_EH_B02B-EH-A_1x02_P2.50mm_Vertical" H 2550 7000 50  0001 C CNN
+F 2 "Connector_JST:JST_XH_B02B-XH-A_1x02_P2.50mm_Vertical" H 2550 7000 50  0001 C CNN
 F 3 "~" H 2550 7000 50  0001 C CNN
 	1    2550 7000
 	0    -1   -1   0   
@@ -1050,12 +1044,12 @@ VBAT
 Text Label 5000 6600 1    50   ~ 0
 GND_Supply
 $Comp
-L Device:R_Small R?
+L Device:R_Small R9
 U 1 1 5CB4A9C2
 P 3850 6050
-F 0 "R?" H 3909 6096 50  0000 L CNN
+F 0 "R9" H 3909 6096 50  0000 L CNN
 F 1 "330orZero" H 3909 6005 50  0000 L CNN
-F 2 "" H 3850 6050 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3850 6050 50  0001 C CNN
 F 3 "~" H 3850 6050 50  0001 C CNN
 	1    3850 6050
 	1    0    0    -1  
@@ -1065,12 +1059,12 @@ Wire Wire Line
 Wire Wire Line
 	3850 5950 3850 5850
 $Comp
-L Device:Polyfuse_Small F?
+L Device:Polyfuse_Small F1
 U 1 1 5CB5B842
 P 1350 6650
-F 0 "F?" H 1200 6700 50  0000 L CNN
+F 0 "F1" H 1200 6700 50  0000 L CNN
 F 1 "500mA" H 1050 6600 50  0000 L CNN
-F 2 "" H 1400 6450 50  0001 L CNN
+F 2 "Fuse:Fuse_1812_4532Metric_Pad1.30x3.40mm_HandSolder" H 1400 6450 50  0001 L CNN
 F 3 "~" H 1350 6650 50  0001 C CNN
 	1    1350 6650
 	1    0    0    -1  
@@ -1082,12 +1076,12 @@ Wire Wire Line
 Wire Wire Line
 	1450 6500 1450 6800
 $Comp
-L Device:Polyfuse_Small F?
+L Device:Polyfuse_Small F2
 U 1 1 5CBE18B1
 P 2550 6650
-F 0 "F?" H 2400 6700 50  0000 L CNN
+F 0 "F2" H 2400 6700 50  0000 L CNN
 F 1 "500mA" H 2250 6600 50  0000 L CNN
-F 2 "" H 2600 6450 50  0001 L CNN
+F 2 "Fuse:Fuse_1812_4532Metric_Pad1.30x3.40mm_HandSolder" H 2600 6450 50  0001 L CNN
 F 3 "~" H 2550 6650 50  0001 C CNN
 	1    2550 6650
 	1    0    0    -1  
@@ -1104,4 +1098,10 @@ Wire Wire Line
 Connection ~ 8800 900 
 Wire Wire Line
 	8800 900  8950 900 
+Wire Wire Line
+	8850 3700 9000 3700
+Wire Wire Line
+	9000 3700 9000 3450
+Wire Wire Line
+	9000 3450 9150 3450
 $EndSCHEMATC
