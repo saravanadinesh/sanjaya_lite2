@@ -6,8 +6,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 4
 Title "Sanjaya Lite 2.0"
-Date "2019-04-15"
-Rev "0.3"
+Date "2019-04-16"
+Rev "0.4"
 Comp "Bodhileaf Technologies Pvt. Ltd."
 Comment1 ""
 Comment2 ""
@@ -490,8 +490,8 @@ L Connector:Conn_01x02_Male J2
 U 1 1 5C360C3F
 P 2750 750
 F 0 "J2" V 2810 790 50  0000 L CNN
-F 1 "J_Current" V 2901 790 50  0000 L CNN
-F 2 "Connector_JST:JST_XH_B02B-XH-A_1x02_P2.50mm_Vertical" H 2750 750 50  0001 C CNN
+F 1 "J_SW_Esp" V 2901 790 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2750 750 50  0001 C CNN
 F 3 "~" H 2750 750 50  0001 C CNN
 	1    2750 750 
 	0    1    1    0   
@@ -696,31 +696,20 @@ Wire Wire Line
 Connection ~ 1700 2250
 NoConn ~ 9750 2200
 Wire Wire Line
-	9550 800  9550 900 
-Wire Wire Line
 	9550 2300 9750 2300
 $Comp
 L Device:CP1 C6
 U 1 1 5CB49DBD
-P 9900 1300
-F 0 "C6" H 10015 1346 50  0000 L CNN
-F 1 "1000uF" H 10015 1255 50  0000 L CNN
-F 2 "Capacitor_SMD:CP_Elec_10x10" H 9900 1300 50  0001 C CNN
-F 3 "~" H 9900 1300 50  0001 C CNN
-	1    9900 1300
+P 10450 1300
+F 0 "C6" H 10565 1346 50  0000 L CNN
+F 1 "1000uF" H 10565 1255 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_10x10" H 10450 1300 50  0001 C CNN
+F 3 "~" H 10450 1300 50  0001 C CNN
+	1    10450 1300
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9900 1150 9900 900 
-Wire Wire Line
-	9900 900  9550 900 
-Connection ~ 9550 900 
-Wire Wire Line
-	9550 900  9550 1100
-Text Label 9900 1700 0    50   ~ 0
+Text Label 10450 1650 0    50   ~ 0
 GND_Supply
-Wire Wire Line
-	9900 1450 9900 1700
 Text Label 6500 4050 0    50   ~ 0
 Sim800_RST
 $Comp
@@ -1104,4 +1093,34 @@ Wire Wire Line
 	9000 3700 9000 3450
 Wire Wire Line
 	9000 3450 9150 3450
+$Comp
+L Connector:Conn_01x02_Male J21
+U 1 1 5CB7CA97
+P 9950 1350
+F 0 "J21" H 9923 1230 50  0000 R CNN
+F 1 "J_SW_Sim800" H 10100 1400 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 9950 1350 50  0001 C CNN
+F 3 "~" H 9950 1350 50  0001 C CNN
+	1    9950 1350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	10450 900  10450 1150
+Wire Wire Line
+	10450 1450 10450 1650
+Wire Wire Line
+	9550 900  9550 1100
+Wire Wire Line
+	9550 800  9550 900 
+Connection ~ 9550 900 
+Wire Wire Line
+	9550 900  10450 900 
+Wire Wire Line
+	9550 1100 9750 1100
+Wire Wire Line
+	9750 1100 9750 1250
+Wire Wire Line
+	9550 1500 9750 1500
+Wire Wire Line
+	9750 1500 9750 1350
 $EndSCHEMATC

@@ -6,8 +6,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 4
 Title "Sanjaya Lite 2.0"
-Date "2019-04-15"
-Rev "0.3"
+Date "2019-04-16"
+Rev "0.4"
 Comp "Bodhileaf Technologies Pvt. Ltd."
 Comment1 ""
 Comment2 ""
@@ -69,7 +69,7 @@ U 1 1 5C12646B
 P 3600 3100
 F 0 "Q1" V 3943 3100 50  0000 C CNN
 F 1 "PMOS_SI2369DS" V 3852 3100 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 3800 3200 50  0001 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3800 3200 50  0001 C CNN
 F 3 "~" H 3600 3100 50  0001 C CNN
 	1    3600 3100
 	0    -1   -1   0   
@@ -315,7 +315,7 @@ U 1 1 5CC0BDBC
 P 8150 2800
 F 0 "J20" V 8210 2841 50  0000 L CNN
 F 1 "Pwr_SW" V 8100 2500 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8150 2800 50  0001 C CNN
+F 2 "Connector_JST:JST_XH_B02B-XH-A_1x02_P2.50mm_Vertical" H 8150 2800 50  0001 C CNN
 F 3 "~" H 8150 2800 50  0001 C CNN
 	1    8150 2800
 	0    1    1    0   
