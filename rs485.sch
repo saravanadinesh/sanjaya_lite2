@@ -25,8 +25,6 @@ F 3 "https://datasheets.maximintegrated.com/en/ds/MAX1487E-MAX491E.pdf" H 4450 3
 	1    4450 3200
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4450 3800 4450 3850
 $Comp
 L Device:Polyfuse_Small F4
 U 1 1 5CBD52DC
@@ -53,7 +51,6 @@ Wire Wire Line
 	4850 3100 5050 3100
 Wire Wire Line
 	5050 3400 4850 3400
-Connection ~ 4450 3850
 Text HLabel 3100 3100 0    50   Input ~ 0
 RO
 Text HLabel 3100 3250 0    50   Input ~ 0
@@ -71,76 +68,68 @@ GND
 $Comp
 L Device:D_TVS_ALT D7
 U 1 1 5CBD5E02
-P 5750 3250
-F 0 "D7" V 5704 3329 50  0000 L CNN
-F 1 "TVS_SMBJ20CA" V 5795 3329 50  0000 L CNN
-F 2 "Diode_SMD:D_SMB_Handsoldering" H 5750 3250 50  0001 C CNN
-F 3 "~" H 5750 3250 50  0001 C CNN
-	1    5750 3250
+P 5850 3250
+F 0 "D7" V 5804 3329 50  0000 L CNN
+F 1 "TVS_SMBJ20CA" V 5895 3329 50  0000 L CNN
+F 2 "Diode_SMD:D_SMB_Handsoldering" H 5850 3250 50  0001 C CNN
+F 3 "~" H 5850 3250 50  0001 C CNN
+	1    5850 3250
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:D_TVS_ALT D8
 U 1 1 5CBD5E49
-P 5750 3650
-F 0 "D8" V 5704 3729 50  0000 L CNN
-F 1 "TVS_SMBJ20CA" V 5795 3729 50  0000 L CNN
-F 2 "Diode_SMD:D_SMB_Handsoldering" H 5750 3650 50  0001 C CNN
-F 3 "~" H 5750 3650 50  0001 C CNN
-	1    5750 3650
+P 5850 3650
+F 0 "D8" V 5804 3729 50  0000 L CNN
+F 1 "TVS_SMBJ20CA" V 5895 3729 50  0000 L CNN
+F 2 "Diode_SMD:D_SMB_Handsoldering" H 5850 3650 50  0001 C CNN
+F 3 "~" H 5850 3650 50  0001 C CNN
+	1    5850 3650
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:D_TVS_ALT D6
 U 1 1 5CBD5EA6
-P 5750 2850
-F 0 "D6" V 5704 2929 50  0000 L CNN
-F 1 "TVS_SMBJ20CA" V 5795 2929 50  0000 L CNN
-F 2 "Diode_SMD:D_SMB_Handsoldering" H 5750 2850 50  0001 C CNN
-F 3 "~" H 5750 2850 50  0001 C CNN
-	1    5750 2850
+P 5850 2850
+F 0 "D6" V 5804 2929 50  0000 L CNN
+F 1 "TVS_SMBJ20CA" V 5895 2929 50  0000 L CNN
+F 2 "Diode_SMD:D_SMB_Handsoldering" H 5850 2850 50  0001 C CNN
+F 3 "~" H 5850 2850 50  0001 C CNN
+	1    5850 2850
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	5750 3500 5750 3450
+	5850 3500 5850 3450
 Wire Wire Line
-	5750 3100 5750 3050
+	5850 3100 5850 3050
 Wire Wire Line
-	5750 3800 5750 3850
-Wire Wire Line
-	4450 3850 5750 3850
+	5850 3800 5850 3850
 Wire Wire Line
 	5250 3400 5500 3400
 Wire Wire Line
 	5500 3400 5500 3450
+Connection ~ 5850 3450
 Wire Wire Line
-	5500 3450 5750 3450
-Connection ~ 5750 3450
-Wire Wire Line
-	5750 3450 5750 3400
+	5850 3450 5850 3400
 Wire Wire Line
 	5250 3100 5500 3100
 Wire Wire Line
 	5500 3100 5500 3050
+Connection ~ 5850 3050
 Wire Wire Line
-	5500 3050 5750 3050
-Connection ~ 5750 3050
-Wire Wire Line
-	5750 3050 5750 3000
-Wire Wire Line
-	4450 3850 4450 4200
-Text HLabel 5750 2550 1    50   Input ~ 0
+	5850 3050 5850 3000
+Text HLabel 5850 2550 1    50   Input ~ 0
 GND
 Wire Wire Line
-	5750 2550 5750 2700
-Text HLabel 6450 3450 2    50   Input ~ 0
+	5850 2550 5850 2700
+Text HLabel 6550 3450 2    50   Input ~ 0
 A
-Text HLabel 6450 3050 2    50   Input ~ 0
+Text HLabel 6550 3050 2    50   Input ~ 0
 B
 Wire Wire Line
-	5750 3050 6450 3050
+	5850 3050 6550 3050
 Wire Wire Line
-	6450 3450 5750 3450
+	6550 3450 5850 3450
 Wire Wire Line
 	4000 3200 4000 3250
 Wire Wire Line
@@ -224,4 +213,28 @@ Wire Wire Line
 Connection ~ 4450 1850
 Wire Wire Line
 	4450 1850 4450 2700
+$Comp
+L Device:R_US R24
+U 1 1 5CB8C58B
+P 5500 3250
+F 0 "R24" H 5568 3296 50  0000 L CNN
+F 1 "120" H 5568 3205 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5540 3240 50  0001 C CNN
+F 3 "~" H 5500 3250 50  0001 C CNN
+	1    5500 3250
+	1    0    0    -1  
+$EndComp
+Connection ~ 5500 3100
+Connection ~ 5500 3400
+Wire Wire Line
+	4450 3800 4450 3850
+Wire Wire Line
+	5500 3050 5850 3050
+Wire Wire Line
+	5500 3450 5850 3450
+Wire Wire Line
+	4450 3850 5850 3850
+Connection ~ 4450 3850
+Wire Wire Line
+	4450 3850 4450 4200
 $EndSCHEMATC
