@@ -36,8 +36,6 @@ F 3 "~" H 1650 3000 50  0001 C CNN
 	1    1650 3000
 	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	7800 3100 8150 3100
 $Comp
 L Connector:Screw_Terminal_01x02 J14
 U 1 1 5C11C0C3
@@ -57,11 +55,11 @@ Wire Wire Line
 	7900 3900 7900 3300
 Wire Wire Line
 	7900 3300 7800 3300
-Text HLabel 9550 3000 2    50   Output ~ 0
+Text HLabel 10050 3000 2    50   Output ~ 0
 3V3_Out
 Wire Wire Line
-	9150 3000 9300 3000
-Text HLabel 9600 3700 2    50   Output ~ 0
+	9650 3000 9800 3000
+Text HLabel 10100 3700 2    50   Output ~ 0
 GND
 $Comp
 L Device:Q_PMOS_GSD Q1
@@ -92,7 +90,7 @@ Wire Wire Line
 Wire Wire Line
 	7000 3000 7100 3000
 Wire Wire Line
-	8150 3100 8150 3700
+	8650 3100 8650 3300
 $Comp
 L Custom_Misc:MP2315_DCDC_Board B2
 U 1 1 5C2C37FE
@@ -117,7 +115,7 @@ Wire Wire Line
 Wire Wire Line
 	7000 2200 9050 2200
 Connection ~ 7000 2550
-Text HLabel 9050 2550 2    50   Output ~ 0
+Text HLabel 9550 2550 2    50   Output ~ 0
 VBAT
 Wire Wire Line
 	4950 3400 4950 4150
@@ -142,7 +140,7 @@ L Connector:Conn_01x02_Male J13
 U 1 1 5C399686
 P 7500 2350
 F 0 "J13" V 7560 2391 50  0000 L CNN
-F 1 "Bat_Bypass+" V 7651 2391 50  0000 L CNN
+F 1 "Bat_Bypass" V 7651 2391 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7500 2350 50  0001 C CNN
 F 3 "~" H 7500 2350 50  0001 C CNN
 	1    7500 2350
@@ -243,85 +241,81 @@ Connection ~ 4950 4150
 $Comp
 L Regulator_Linear:MCP1700-3302E_SOT23 U2
 U 1 1 5CB50A11
-P 8850 3000
-F 0 "U2" H 8850 3242 50  0000 C CNN
-F 1 "MCP1700-3302E_SOT23" H 8900 3150 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 8850 3225 50  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001826C.pdf" H 8850 3000 50  0001 C CNN
-	1    8850 3000
+P 9350 3000
+F 0 "U2" H 9350 3242 50  0000 C CNN
+F 1 "MCP1700-3302E_SOT23" H 9400 3150 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 9350 3225 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001826C.pdf" H 9350 3000 50  0001 C CNN
+	1    9350 3000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8150 3700 8400 3700
+	8650 3700 8900 3700
 Wire Wire Line
-	8850 3300 8850 3700
-Connection ~ 8850 3700
+	9350 3300 9350 3700
+Connection ~ 9350 3700
 Wire Wire Line
-	8850 3700 9300 3700
+	9350 3700 9800 3700
 $Comp
 L Device:C_Small C7
 U 1 1 5CB5F117
-P 8400 3300
-F 0 "C7" H 8492 3346 50  0000 L CNN
-F 1 "1uF" H 8492 3255 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8400 3300 50  0001 C CNN
-F 3 "~" H 8400 3300 50  0001 C CNN
-	1    8400 3300
+P 8900 3300
+F 0 "C7" H 8992 3346 50  0000 L CNN
+F 1 "1uF" H 8992 3255 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8900 3300 50  0001 C CNN
+F 3 "~" H 8900 3300 50  0001 C CNN
+	1    8900 3300
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C_Small C8
 U 1 1 5CB5F1C5
-P 9300 3300
-F 0 "C8" H 9392 3346 50  0000 L CNN
-F 1 "1uF" H 9392 3255 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 9300 3300 50  0001 C CNN
-F 3 "~" H 9300 3300 50  0001 C CNN
-	1    9300 3300
+P 9800 3300
+F 0 "C8" H 9892 3346 50  0000 L CNN
+F 1 "1uF" H 9892 3255 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 9800 3300 50  0001 C CNN
+F 3 "~" H 9800 3300 50  0001 C CNN
+	1    9800 3300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8400 3400 8400 3700
-Connection ~ 8400 3700
+	8900 3400 8900 3700
+Connection ~ 8900 3700
 Wire Wire Line
-	8400 3700 8850 3700
+	8900 3700 9350 3700
 Wire Wire Line
-	9300 3400 9300 3700
-Connection ~ 9300 3700
+	9800 3400 9800 3700
+Connection ~ 9800 3700
 Wire Wire Line
-	9300 3700 9600 3700
+	9800 3700 10100 3700
 Wire Wire Line
-	9300 3200 9300 3000
-Connection ~ 9300 3000
+	9800 3200 9800 3000
+Connection ~ 9800 3000
 Wire Wire Line
-	9300 3000 9550 3000
+	9800 3000 10050 3000
 Wire Wire Line
-	8400 3200 8400 3000
-Connection ~ 8400 3000
+	8900 3200 8900 3000
+Connection ~ 8900 3000
 Wire Wire Line
-	8400 3000 8550 3000
+	8900 3000 9050 3000
 Wire Wire Line
-	7500 2550 8400 2550
+	8900 3000 8900 2550
+Connection ~ 8900 2550
 Wire Wire Line
-	7800 3000 8050 3000
-Wire Wire Line
-	8400 3000 8400 2550
-Connection ~ 8400 2550
-Wire Wire Line
-	8400 2550 9050 2550
+	8900 2550 9550 2550
 $Comp
 L Connector:Conn_01x02_Male J20
 U 1 1 5CC0BDBC
-P 8150 2800
-F 0 "J20" V 8210 2841 50  0000 L CNN
-F 1 "Pwr_SW" V 8100 2500 50  0000 L CNN
-F 2 "Connector_JST:JST_XH_B02B-XH-A_1x02_P2.50mm_Vertical" H 8150 2800 50  0001 C CNN
-F 3 "~" H 8150 2800 50  0001 C CNN
-	1    8150 2800
+P 8650 2800
+F 0 "J20" V 8710 2841 50  0000 L CNN
+F 1 "Pwr_SW" V 8600 2500 50  0000 L CNN
+F 2 "Connector_JST:JST_XH_B02B-XH-A_1x02_P2.50mm_Vertical" H 8650 2800 50  0001 C CNN
+F 3 "~" H 8650 2800 50  0001 C CNN
+	1    8650 2800
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	8150 3000 8400 3000
+	8650 3000 8900 3000
 $Comp
 L Device:D_Zener_Small_ALT D3
 U 1 1 5CB24925
@@ -333,4 +327,29 @@ F 3 "~" V 3900 3300 50  0001 C CNN
 	1    3900 3300
 	0    1    1    0   
 $EndComp
+Wire Wire Line
+	7500 2550 8900 2550
+Wire Wire Line
+	7800 3000 8550 3000
+Wire Wire Line
+	7800 3100 8650 3100
+$Comp
+L Connector:Conn_01x02_Male J23
+U 1 1 5CBCCB5A
+P 8250 3500
+F 0 "J23" V 8310 3541 50  0000 L CNN
+F 1 "Bat_Prot_Bypass" V 8200 3100 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8250 3500 50  0001 C CNN
+F 3 "~" H 8250 3500 50  0001 C CNN
+	1    8250 3500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7900 3300 8250 3300
+Connection ~ 7900 3300
+Wire Wire Line
+	8350 3300 8650 3300
+Connection ~ 8650 3300
+Wire Wire Line
+	8650 3300 8650 3700
 $EndSCHEMATC
