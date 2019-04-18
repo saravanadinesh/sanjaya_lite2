@@ -813,8 +813,6 @@ Connection ~ 7850 2000
 Wire Wire Line
 	7850 2000 7850 2200
 Wire Wire Line
-	6000 2650 6950 2650
-Wire Wire Line
 	7250 2650 7250 2500
 Wire Wire Line
 	7250 2500 7650 2500
@@ -828,8 +826,6 @@ Wire Wire Line
 	8000 2900 7250 2900
 Wire Wire Line
 	7250 2900 7250 2750
-Wire Wire Line
-	7250 2750 6850 2750
 $Comp
 L Connector:Conn_01x04_Male J8
 U 1 1 5CB7AD38
@@ -1123,25 +1119,33 @@ Wire Wire Line
 	9550 1500 9750 1500
 Wire Wire Line
 	9750 1500 9750 1350
-Wire Wire Line
-	6850 2850 6850 2750
-Connection ~ 6850 2750
-Wire Wire Line
-	6850 2750 6000 2750
-Wire Wire Line
-	6950 2850 6950 2650
-Connection ~ 6950 2650
-Wire Wire Line
-	6950 2650 7250 2650
 $Comp
-L Connector:Conn_01x02_Male J22
-U 1 1 5CBECC22
-P 6850 3050
-F 0 "J22" V 7003 2863 50  0000 R CNN
-F 1 "UART_Sim800" V 6850 2850 50  0000 R CNN
-F 2 "Connector_JST:JST_XH_B02B-XH-A_1x02_P2.50mm_Vertical" H 6850 3050 50  0001 C CNN
-F 3 "~" H 6850 3050 50  0001 C CNN
-	1    6850 3050
+L Connector:Conn_01x03_Male J22
+U 1 1 5CB8BA48
+P 6850 3100
+F 0 "J22" V 7003 2913 50  0000 R CNN
+F 1 "UART_Sim800" V 6912 2913 50  0000 R CNN
+F 2 "Connector_JST:JST_XH_B03B-XH-A_1x03_P2.50mm_Vertical" H 6850 3100 50  0001 C CNN
+F 3 "~" H 6850 3100 50  0001 C CNN
+	1    6850 3100
 	0    -1   -1   0   
 $EndComp
+Wire Wire Line
+	6000 2650 6850 2650
+Wire Wire Line
+	6000 2750 6950 2750
+Wire Wire Line
+	6850 2900 6850 2650
+Connection ~ 6850 2650
+Wire Wire Line
+	6850 2650 7250 2650
+Wire Wire Line
+	6950 2900 6950 2750
+Connection ~ 6950 2750
+Wire Wire Line
+	6950 2750 7250 2750
+Text Label 6750 2550 2    50   ~ 0
+GND_Supply
+Wire Wire Line
+	6750 2900 6750 2550
 $EndSCHEMATC
