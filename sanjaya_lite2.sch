@@ -570,17 +570,15 @@ Text Label 1450 6500 1    50   ~ 0
 GND_Supply
 Text Label 1350 6500 1    50   ~ 0
 12V_Out
-Text Label 3850 5850 1    50   ~ 0
+Text Label 3950 5850 1    50   ~ 0
 SCLK
-Text Label 3950 6600 1    50   ~ 0
-MISO_RLY1
-Wire Wire Line
-	3950 6600 3950 6800
 Text Label 4050 6600 1    50   ~ 0
+MISO_RLY1
+Text Label 4150 6600 1    50   ~ 0
 MOSI_RLY2
 Wire Wire Line
 	4050 6600 4050 6800
-Text Label 4150 6600 1    50   ~ 0
+Text Label 3850 6600 1    50   ~ 0
 CS
 Wire Wire Line
 	4150 6600 4150 6800
@@ -1031,18 +1029,16 @@ GND_Supply
 $Comp
 L Device:R_Small R9
 U 1 1 5CB4A9C2
-P 3850 6050
-F 0 "R9" H 3909 6096 50  0000 L CNN
-F 1 "330orZero" H 3909 6005 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3850 6050 50  0001 C CNN
-F 3 "~" H 3850 6050 50  0001 C CNN
-	1    3850 6050
+P 3950 6050
+F 0 "R9" H 4009 6096 50  0000 L CNN
+F 1 "330orZero" H 4009 6005 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3950 6050 50  0001 C CNN
+F 3 "~" H 3950 6050 50  0001 C CNN
+	1    3950 6050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3850 6150 3850 6800
-Wire Wire Line
-	3850 5950 3850 5850
+	3950 5950 3950 5850
 $Comp
 L Device:Polyfuse_Small F1
 U 1 1 5CB5B842
@@ -1148,4 +1144,8 @@ Text Label 6750 2550 2    50   ~ 0
 GND_Supply
 Wire Wire Line
 	6750 2900 6750 2550
+Wire Wire Line
+	3950 6150 3950 6800
+Wire Wire Line
+	3850 6600 3850 6800
 $EndSCHEMATC
