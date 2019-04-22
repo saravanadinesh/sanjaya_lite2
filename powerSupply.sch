@@ -298,11 +298,6 @@ Wire Wire Line
 Connection ~ 8900 3000
 Wire Wire Line
 	8900 3000 9050 3000
-Wire Wire Line
-	8900 3000 8900 2550
-Connection ~ 8900 2550
-Wire Wire Line
-	8900 2550 9550 2550
 $Comp
 L Connector:Conn_01x02_Male J20
 U 1 1 5CC0BDBC
@@ -328,9 +323,7 @@ F 3 "~" V 3900 3300 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	7500 2550 8900 2550
-Wire Wire Line
-	7800 3000 8550 3000
+	7800 3000 8000 3000
 Wire Wire Line
 	7800 3100 8650 3100
 $Comp
@@ -352,23 +345,20 @@ Wire Wire Line
 Connection ~ 8650 3300
 Wire Wire Line
 	8650 3300 8650 3700
-$Comp
-L Connector:Conn_01x02_Male J24
-U 1 1 5CBEC0DE
-P 7400 3900
-F 0 "J24" V 7460 3941 50  0000 L CNN
-F 1 "Bat_Bypass-" V 7350 3750 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7400 3900 50  0001 C CNN
-F 3 "~" H 7400 3900 50  0001 C CNN
-	1    7400 3900
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	8650 3700 7500 3700
 Connection ~ 8650 3700
-Wire Wire Line
-	7400 3700 7000 3700
 Connection ~ 7000 3700
 Wire Wire Line
 	7000 3700 7000 4150
+Wire Wire Line
+	7000 3700 8650 3700
+Wire Wire Line
+	7500 2550 8000 2550
+Wire Wire Line
+	8000 3000 8000 2550
+Connection ~ 8000 3000
+Wire Wire Line
+	8000 3000 8550 3000
+Connection ~ 8000 2550
+Wire Wire Line
+	8000 2550 9550 2550
 $EndSCHEMATC
