@@ -6,8 +6,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 4
 Title "Sanjaya Lite 2.0"
-Date "2019-04-16"
-Rev "0.4"
+Date "2019-04-23"
+Rev "0.9"
 Comp "Bodhileaf Technologies Pvt. Ltd."
 Comment1 ""
 Comment2 ""
@@ -358,7 +358,8 @@ Wire Wire Line
 Connection ~ 8000 3000
 Wire Wire Line
 	8000 3000 8550 3000
-Connection ~ 8000 2550
 Wire Wire Line
-	8000 2550 9550 2550
+	9550 2550 8900 2550
+Wire Wire Line
+	8900 2550 8900 3000
 $EndSCHEMATC
