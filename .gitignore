@@ -15,3 +15,6 @@ _autosave-*
 # Autorouter files (exported from Pcbnew)
 *.dsn
 *.ses
+# Folders
+package*
+
